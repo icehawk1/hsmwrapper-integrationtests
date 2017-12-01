@@ -20,7 +20,7 @@ public class GreeterTest {
     @Deployment
     public static JavaArchive createDeployment() {
         return ShrinkWrap.create(JavaArchive.class)
-                .addClass(Greeter.class)
+                .addPackage("com.escrypt.cycurkeys.hsmwrapper")
                 .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
     }
 
