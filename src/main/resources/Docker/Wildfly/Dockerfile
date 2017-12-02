@@ -9,7 +9,7 @@ WORKDIR /app/wildfly
 #ENV http_proxy host:port
 #ENV https_proxy host:port
 
-# update is needed to find openjdk
+# update is needed to find apt packages
 RUN apt-get -y update
 RUN apt-get -y install openjdk-8-jdk-headless
 RUN bin/add-user.sh -u escrypt -p escrypt
